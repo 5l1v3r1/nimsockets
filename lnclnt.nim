@@ -10,7 +10,7 @@ proc main(port : int) =
       if toSend == ":q":
         break
       echo("Sending...")
-      client.send(toSend)
+      client.send(toSend & "\n")
       echo("Sent: ", toSend)
       echo("Receiving...")
       var msg = client.recvLine()
