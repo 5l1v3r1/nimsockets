@@ -1,0 +1,7 @@
+rule nimc
+  command = nim --opt:size -d:release --app:console c $in
+
+build | blkclnt.exe: nimc blkclnt.nim
+build | blksrv.exe: nimc blksrv.nim
+build | lnsrv.exe: nimc lnsrv.nim
+build | lnclnt.exe: nimc lnclnt.nim
