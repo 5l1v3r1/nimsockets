@@ -5,3 +5,4 @@ build | blkclnt.exe: nimc blkclnt.nim
 build | blksrv.exe: nimc blksrv.nim
 build | lnsrv.exe: nimc lnsrv.nim
 build | lnclnt.exe: nimc lnclnt.nim
+build | pascal.exe: nimc pascal.nim
